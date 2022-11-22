@@ -1,0 +1,15 @@
+h1 {
+	font-size: 72px;
+	text-align: center;
+}
+
+p {
+	text-align: center;
+	font-size: 20px;
+}
+
+span {
+	font-size: 92px;
+	font-weight: bolder;
+	color: rgb(255, 157, 0);
+}
