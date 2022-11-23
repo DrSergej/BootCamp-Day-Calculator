@@ -32,11 +32,11 @@ if (date2 >= dateNeuJahr) {
 	console.log("NeuJahr", feiertage);
 }
 console.log("feiertage gesammt", feiertage);
-if (currentDayOfWeek >= 1 && currentDayOfWeek <= 5) {
+if (currentDayOfWeek >= 0 && currentDayOfWeek < 5) {
 	kursTag = diffDays - (diffWeeks - 1) * 2 - feiertage;
 	htmlAusgabe.innerHTML = `Hallo, SuperCoder!<br> Heute ist der <span>${kursTag}.</span> Bootcamp-Tag. </br> Viel Spass beim Coden! :)`;
 } else {
-	kursTag = diffDays - diffWeeks * 2 - feiertage;
+	kursTag = diffDays - (diffWeeks - 1) * 2 - feiertage;
 	htmlAusgabe.innerHTML = `Hallo, SuperCoder!<br> Heute wäre der <span> ${kursTag}.</span> Bootcamp-Tag. Aber zum Glück ist zZt. Wochenende.</br> Trotzdem viel Spass beim Coden an die gaaanz fleißigen, <br>(aka Streber :p) unter uns! :)`;
 }
 
